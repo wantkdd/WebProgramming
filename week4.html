@@ -44,7 +44,7 @@
   <h3>1. 직접 객체 만들기</h3>
   <script>
     document.write("교과목 이름 = "); document.write(subject.korName+"<br>");
-    document.write("등록 학생 수 = "); document.write(subject.nStudent+"<br>");
+    document.write("등록 학생 수 = "); document.write(subject.getStudentCount()+"<br>");
     subject.register();
     document.write("after register, 등록 학생 수 = "); document.write(subject.getStudentCount());
   </script>
@@ -52,7 +52,7 @@
   <h3>2. 리터럴 표기법</h3>
   <script>
     document.write("교과목 이름 = "); document.write(subject1.korName+"<br>");
-    document.write("등록 학생 수 = "); document.write(subject1.nStudent+"<br>");
+    document.write("등록 학생 수 = "); document.write(subject1.getStudentCount()+"<br>");
     subject1.register();
     document.write("after register, 등록 학생 수 = "); document.write(subject1.getStudentCount());
   </script>
@@ -61,7 +61,7 @@
   <script>
     let subject2 = new Subject2();
     document.write("교과목 이름 = "); document.write(subject2.korName+"<br>");
-    document.write("등록 학생 수 = "); document.write(subject2.nStudent+"<br>");
+    document.write("등록 학생 수 = "); document.write(subject2.getStudentCount()+"<br>");
     subject2.register();
     document.write("after register, 등록 학생 수 = "); document.write(subject2.getStudentCount());
   </script>
