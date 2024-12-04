@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>유상완-o</title>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      width="100"
+      height="100"
+      style="background-color: aliceblue"
+    ></canvas>
+    <script>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      ctx.beginPath();
+      ctx.arc(50, 50, 30, 0, Math.PI * 2);
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'black';
+      ctx.stroke();
+    </script>
+  </body>
+</html>

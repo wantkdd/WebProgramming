@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onkeydown</title>
+    <script>
+      function cal(e) {
+        if (e.key == 'Enter') {
+          var sik = document.getElementById('1');
+          var gap = document.getElementById('2');
+          gap.value = eval(sik.value);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h3>계산기 만들기</h3>
+    <hr />
+    <p>수식을 입력하고 &lt;Enter&gt;를 입력하세요.</p>
+    <form action="">
+      식<input type="text" id="1"onkeydown="cal(event)"" /><br />
+      값<input type="text" id="2" />
+    </form>
+  </body>
+</html>

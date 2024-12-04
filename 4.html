@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유상완-4</title>
+    <script>
+      function Officer(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+      Officer.prototype.getInfo = function () {
+        return `이름:${this.name}, 나이:${this.age}`;
+      };
+
+      function inputOfficeInfo() {
+        let input = prompt('이름과 나이를 입력하세요 (예: 홍길동, 30)');
+        if (input) {
+          let [name, age] = input.split(',').map((item) => item.trim());
+
+          // new Object()
+          let officer1 = new Object();
+          officer1.name = name;
+          officer1.age = age;
+
+          // 리터럴 표기법
+          let officer2 = { name: name, age: age };
+
+          // 프로토타입
+          let officer3 = new Officer(name, age);
+
+          document.body.innerHTML = `
+            <h3>Office by new Object - 이름:${officer1.name}, 나이:${
+            officer1.age
+          }</h3>
+            <h3>Office by literal 표기법 - 이름:${officer2.name}, 나이:${
+            officer2.age
+          }</h3>
+            <h3>Office by Prototype - ${officer3.getInfo()}</h3>
+            <button onclick="inputOfficeInfo()">Office 정보 입력</button>
+          `;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Officer1:</h3>
+    <h3>Officer2:</h3>
+    <h3>Officer3:</h3>
+    <button onclick="inputOfficeInfo()">Office 정보 입력</button>
+  </body>
+</html>

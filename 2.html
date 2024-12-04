@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유상완-2</title>
+    <style>
+      .correct {
+        background-color: lightgreen;
+      }
+      .incorrect {
+        background-color: lightpink;
+      }
+    </style>
+    <script>
+      function checkAnswer(value) {
+        var correctAnswer = '5';
+        var spans = document.getElementsByClassName('answer');
+
+        for (var i = 0; i < spans.length; i++) {
+          spans[i].className = 'answer';
+        }
+
+        for (var i = 0; i < spans.length; i++) {
+          if (spans[i].innerHTML === value) {
+            if (value === correctAnswer) {
+              spans[i].className = 'answer correct';
+            } else {
+              spans[i].className = 'answer incorrect';
+            }
+            break;
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h3>2 + 3 = ?</h3>
+    <form>
+      <label>
+        <input
+          type="radio"
+          name="answer"
+          value="1"
+          onclick="checkAnswer('1')"
+        />
+        <span class="answer">1</span> </label
+      ><br />
+      <label>
+        <input
+          type="radio"
+          name="answer"
+          value="3"
+          onclick="checkAnswer('3')"
+        />
+        <span class="answer">3</span> </label
+      ><br />
+      <label>
+        <input
+          type="radio"
+          name="answer"
+          value="5"
+          onclick="checkAnswer('5')"
+        />
+        <span class="answer">5</span> </label
+      ><br />
+      <label>
+        <input
+          type="radio"
+          name="answer"
+          value="7"
+          onclick="checkAnswer('7')"
+        />
+        <span class="answer">7</span> </label
+      ><br />
+    </form>
+  </body>
+</html>

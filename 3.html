@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유상완-3</title>
+    <script>
+      function show(id, answer) {
+        var ans = document.getElementById(id);
+        if (ans.childNodes.length === 0) {
+          var p = document.createElement('p');
+          p.textContent = answer;
+          ans.appendChild(p);
+        }
+      }
+
+      function del(id) {
+        var ans = document.getElementById(id);
+        while (ans.firstChild) {
+          ans.removeChild(ans.firstChild);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h4>Q. 웹프로그래밍의 3가지 요소는?</h4>
+    <button onclick="show('webAnswer', 'HTML5, CSS, JavaScript')">
+      답 보기
+    </button>
+    <button onclick="del('webAnswer')">답 삭제</button>
+    <div id="webAnswer"></div>
+
+    <h4>Q. 클라우드 컴퓨팅이란?</h4>
+    <button
+      onclick="show('cloudAnswer', '컴퓨팅 자원을 인터넷을 이용하여 사용하는 것')"
+    >
+      답 보기
+    </button>
+    <button onclick="del('cloudAnswer')">답 삭제</button>
+    <div id="cloudAnswer"></div>
+  </body>
+</html>

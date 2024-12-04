@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var newWin = null;
+      function load(URL) {
+        newWin = window.open(URL, 'myWin', '');
+      }
+      function closeNewWindow() {
+        if (newWin == null || newWin.closed) {
+          return;
+        } else newWin.close();
+      }
+    </script>
+  </head>
+  <body>
+    <h3>닫기</h3>
+    <hr />
+    <a href="javascript:load('http://www.disenyworld.com')">새 윈도우 열기</a>
+  </body>
+</html>

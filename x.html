@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>유상완-x</title>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      width="100"
+      height="100"
+      style="background-color: aliceblue"
+    ></canvas>
+    <script>
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      ctx.beginPath();
+      ctx.moveTo(10, 10);
+      ctx.lineTo(90, 90);
+      ctx.moveTo(90, 10);
+      ctx.lineTo(10, 90);
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'black';
+      ctx.stroke();
+    </script>
+  </body>
+</html>
