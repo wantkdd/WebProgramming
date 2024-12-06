@@ -45,7 +45,8 @@
 - Week 9 연습  
    - prac11_3.html: 실습문제 11-3
    - prac11_5.html: 실습문제 11-5
-   - prac11_6.html: 실습문제 11-6prac11_7.html: 실습문제 11-7
+   - prac11_6.html: 실습문제 11-6
+   - prac11_7.html: 실습문제 11-7
    - prac11_8.html: 실습문제 11-8
    - prac11_9.html: 실습문제 11-9
 
