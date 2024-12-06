@@ -67,4 +67,4 @@
   - prac13-6.html : 실습문제 13-6
   - flex.html : 플렉스
   - grid.html : 그리드
-  - Op2~8.html : 오픈챌린지 2~8
+  - Op2\~8.html : 오픈챌린지 2\~8
