@@ -34,31 +34,30 @@
   - prac9_10.html: 실습문제 9-10
   - prac9-1.html: 실습문제 9-17
  
-  - Week 7 연습
-    - prac10_2.html: 실습문제 10-2
-    - prac10-5.html: 실습문제 10-5
-    - prac10-6.html: 실습문제 10-6
-    - prac10_7.html: 실습문제 10-7
-    - prac10_8.html: 실습문제 10-8
-    - prac10_9.html: 실습문제 10-9
-      
-   - Week 9 연습
-     - prac11_3.html: 실습문제 11-3
-     - prac11_5.html: 실습문제 11-5
-     - prac11_6.html: 실습문제 11-6
-     - prac11_7.html: 실습문제 11-7
-     - prac11_8.html: 실습문제 11-8
-     - prac11_9.html: 실습문제 11-9
+- Week 7 연습
+   - prac10_2.html: 실습문제 10-2
+   - prac10-5.html: 실습문제 10-5
+   - prac10-6.html: 실습문제 10-6
+   - prac10_7.html: 실습문제 10-7
+   - prac10_8.html: 실습문제 10-8
+   - prac10_9.html: 실습문제 10-9
+
+- Week 9 연습  
+   - prac11_3.html: 실습문제 11-3
+   - prac11_5.html: 실습문제 11-5
+   - prac11_6.html: 실습문제 11-6prac11_7.html: 실습문제 11-7
+   - prac11_8.html: 실습문제 11-8
+   - prac11_9.html: 실습문제 11-9
 
   
-  - Week10 연습
+- Week10 연습
   - prac12-2-search.html: 실습문제 12-2
   - prac12-2-store.html: 실습문제 12-2
   - prac12-4-store.html: 실습문제 12-4
   - prac12-4-view.html: 실습문제 12-4
 
   
-  - 나머지 연습
+- 나머지 연습
   - add.js : 수업
   - dg.js : 수업
   - funcPr-practice.js : 수업
